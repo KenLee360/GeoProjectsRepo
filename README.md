@@ -1,3 +1,3 @@
 # GeoProjectsRepo
-Repo for various projects and interests
-This is a work in Progress
+Repo for various projects and interests <br>
+This is a work in Progress that will constanly see updates.
