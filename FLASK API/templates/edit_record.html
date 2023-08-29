@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <title>Ariline Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>Edit Record</h2>
+
+    <form action="" method="POST">
+        <div class="row">
+            <div class="col">
+              <fieldset disabled>
+                <label for="id">Id</label>
+                <input type="text" class="form-control" name="id" id="id" value="{{data.id}}">
+              </fieldset>
+            </div>
+            <div class="col">
+              <label for="Airline">Airline</label>
+              <input type="text" class="form-control" name="Airline" id="Airline" value="{{data.Airline}}">
+            </div>
+            <div class="col">
+              <label for="Flight">Flight #</label>
+              <input type="text" class="form-control" name="Flight" id="Flight" value="{{data.Flight}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <label for="AirportFrom">Airport From</label>
+              <input type="text" class="form-control" name="AirportFrom" id="AirportFrom" value="{{data.AirportFrom}}">
+            </div>
+            <div class="col">
+              <label for="AirportTo">Airport To</label>
+              <input type="text" class="form-control" name="AirportTo" id="AirportTo" value="{{data.AirportTo}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <label for="DayOfWeek">Day of Week</label>
+              <input type="text" class="form-control" name="DayOfWeek" id="DayOfWeek" value="{{data.DayOfWeek}}">
+            </div>
+            <div class="col">
+              <label for="Time">Time (mins)</label>
+              <input type="text" class="form-control" name="Time" id="Time" value="{{data.Time}}">
+            </div>
+            <div class="col">
+              <label for="Length">Length (miles)</label>
+              <input type="text" class="form-control" name="Length" id="Length" value="{{data.Length}}">
+            </div>
+            <div class="col">
+              <label for="Delay">Delay</label>
+              <input type="text" class="form-control" name="Delay" id="Delay" value="{{data.Delay}}">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit</button>
+    </form>
+</body>
