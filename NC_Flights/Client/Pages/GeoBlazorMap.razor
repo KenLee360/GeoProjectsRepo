@@ -1,0 +1,21 @@
+﻿@page "/airportsmap"
+
+<MapView AllowDefaultEsriLogin="true" Longitude="-79.01" Latitude="35.75" Zoom="6" Style="height: 1000px; width: 100%">
+    <Map ArcGISDefaultBasemap="gray-vector">
+        <FeatureLayer Url="https://services.arcgis.com/NuWFvHYDMVmmxMeM/arcgis/rest/services/NCDOT_DOAAirports/FeatureServer/0">
+            <PopupTemplate Title="{AirportName}">
+                <FieldsPopupContent>
+                    <FieldInfo FieldName="AirportName" Label="Airport Name" />
+                    <FieldInfo FieldName="AirportType" Label="Airport Type" />
+                    <FieldInfo FieldName="AirportId" Label="@link"></FieldInfo>
+                </FieldsPopupContent>
+            </PopupTemplate>
+        </FeatureLayer>
+    </Map>
+    <LegendWidget Position="OverlayPosition.TopRight" />
+</MapView>
+
+@code {
+    public string link { get; set; } = "<a href='https://localhost:7039/airports'>All Airports</a>";
+
+}

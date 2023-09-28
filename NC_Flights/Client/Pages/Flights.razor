@@ -1,0 +1,57 @@
+﻿@page "/flights"
+@using NC_Flights.Shared;
+@inject HttpClient Http
+
+<PageTitle>Flights</PageTitle>
+
+@if (FlyData == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="background:#BDBDBD">
+        <br />
+        <br />
+        <MudTable Items="@FlyData" Striped="true" SortLabel="Sort By">
+            <ToolBarContent>
+                <MudText Typo="Typo.h5">All Flights</MudText>
+            </ToolBarContent>
+            <HeaderContent >
+                <MudTh><MudTableSortLabel SortBy="new Func<AirlinesNc, object>(x=>x.Airline)">Airline</MudTableSortLabel></MudTh>
+                <MudTh>Fllight #</MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<AirlinesNc, object>(x=>x.AirportFrom)">Departing</MudTableSortLabel></MudTh>
+                <MudTh><MudTableSortLabel SortBy="new Func<AirlinesNc, object>(x=>x.AirportTo)">Arrival</MudTableSortLabel></MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context.Airline</MudTd>
+                <MudTd>@context.Flight</MudTd>
+                <MudTd>@context.AirportFrom</MudTd>
+                <MudTd>@context.AirportTo</MudTd>
+                <MudTd><a href="edit/@context.Id">View Details</a></MudTd>
+            </RowTemplate>
+            <PagerContent>
+                <MudTablePager PageSizeOptions="new int[] { 25, 50, 100, int.MaxValue }" />
+            </PagerContent>
+        </MudTable>
+        <br />
+        <br />
+    </MudContainer>
+}
+
+@code {
+    public IEnumerable<AirlinesNc> FlyData  { get; set; } = new List<AirlinesNc>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await Http.GetFromJsonAsync<List<AirlinesNc>>("flight");
+        if (result is not null)
+        {
+            FlyData = result;
+        }
+    }
+
+}
+
+

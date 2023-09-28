@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NC_Flights.Client.props" />
+</Project>

@@ -1,0 +1,89 @@
+﻿@page "/edit/{id:int}"
+@using NC_Flights.Shared
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+
+<MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="background:#BDBDBD">
+    <EditForm Model="flight" OnSubmit="Update">
+        <br />
+        <br />
+        <MudCard>
+            <MudCardContent>
+                <MudGrid>
+                    <MudItem xs="12" sm="4">
+                        <MudNumericField Label="Id" HideSpinButtons="true" ReadOnly="true" @bind-Value=flight.Id />
+                    </MudItem>
+                    <MudItem xs="12" sm="4">
+                        <MudTextField Label="Airline" @bind-Value=flight.Airline />
+                    </MudItem>
+                    <MudItem xs="12" sm="4">
+                        <MudNumericField Label="Flight" HideSpinButtons="true" @bind-Value=flight.Flight />
+                    </MudItem>
+                </MudGrid>
+                <MudGrid>
+                    <MudItem xs="12" sm="6">
+                        <MudTextField Label="Id" @bind-Value=flight.AirportFrom />
+                    </MudItem>
+                    <MudItem xs="12" sm="6">
+                        <MudTextField Label="Airline" @bind-Value=flight.AirportTo />
+                    </MudItem>
+                </MudGrid>
+                <MudGrid>
+                    <MudItem xs="12" sm="4">
+                        <MudTextField Label="Day of Week" @bind-Value=flight.DayOfWeek />
+                    </MudItem>
+                    <MudItem xs="12" sm="4">
+                        <MudNumericField Label="Time (mins)" HideSpinButtons="true" @bind-Value=flight.Time />
+                    </MudItem>
+                    <MudItem xs="12" sm="4">
+                        <MudNumericField Label="Length (miles)" HideSpinButtons="true" @bind-Value=flight.Length />
+                    </MudItem>
+                </MudGrid>
+                <br />
+                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary">Edit</MudButton>
+            </MudCardContent>
+        </MudCard>
+        <br />
+        <br />
+    </EditForm>
+    <MudItem Style="background:#BDBDBD;height:700px;" />
+</MudContainer>
+
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    public AirlinesNc flight { get; set; } = new AirlinesNc();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        if (Id is not null)
+        {
+            var result = await Http.GetAsync($"flight/{Id}");
+            if (result.IsSuccessStatusCode)
+            {
+                var record = await result.Content.ReadFromJsonAsync<AirlinesNc>();
+                if (record is not null)
+                {
+                    flight = record;
+                }
+
+            }
+        }
+
+    }
+
+
+
+    async Task Update()
+    {
+        HttpResponseMessage httpx;
+
+        httpx = await Http.PutAsJsonAsync($"flight/{Id}", flight);
+        Navigation.NavigateTo($"/airports");
+    }
+
+}

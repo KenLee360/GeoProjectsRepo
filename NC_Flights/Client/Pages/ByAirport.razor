@@ -1,0 +1,61 @@
+﻿@page "/airports/{air}"
+@using NC_Flights.Shared;
+@inject HttpClient Http
+
+<PageTitle>Airport</PageTitle>
+
+@if (Airport == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="background:#BDBDBD">
+        <br />
+        <br />
+        <MudTable Items="@Airport" Striped="true">
+            <ToolBarContent>
+                <MudText Typo="Typo.h5">All flights for @air</MudText>
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh>Airline</MudTh>
+                <MudTh>Flight #</MudTh>
+                <MudTh>Departing</MudTh>
+                <MudTh>Arrival</MudTh>
+                <MudTh></MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd>@context.Airline</MudTd>
+                <MudTd>@context.Flight</MudTd>
+                <MudTd>@context.AirportFrom</MudTd>
+                <MudTd>@context.AirportTo</MudTd>
+                <MudTd><a href="edit/@context.Id">View Details</a></MudTd>
+            </RowTemplate>
+            <PagerContent>
+                <MudTablePager PageSizeOptions="new int[] { 25, 50, 100, int.MaxValue }" />
+            </PagerContent>
+        </MudTable>
+        <br />
+        <br />
+    </MudContainer>
+}
+
+@code {
+    [Parameter]
+    public string? air { get; set; }
+
+    public List<AirlinesNc> Airport  { get; set; } = new List<AirlinesNc>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var result = await Http.GetAsync($"flight/search?airport={air}");
+        if (result.IsSuccessStatusCode)
+        {
+            var record = await result.Content.ReadFromJsonAsync<List<AirlinesNc>>();
+            if (record is not null)
+            {
+                Airport = record;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+
+<MudCarousel Class="mud-width-full" Style="height:900px;" ShowArrows="true" TData="object">
+    <MudCarouselItem Transition="Transition.Slide" Style="background:#BDBDBD">
+        <div class="d-flex justify-center" style="height:100%; width:100%;">
+            <MudImage Src="./plane.jfif" ObjectFit=ObjectFit.Cover Alt="United Airplane" Elevation="25" Class="rounded-lg align-center" />
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="Transition.Slide" Style="background:#BDBDBD">
+        <div class="d-flex" style="height:100%">
+            <MudContainer MaxWidth="MaxWidth.Medium">
+                <MudText Typo="Typo.h2" Align="Align.Center" Color=Color.Primary Class="pa-10">Welcome to the NC Flight Tracker</MudText>
+                <MudDivider />
+                <MudText Typo="Typo.h5" Class="pa-10">This app shows information for some commercial flights from NC Airports.</MudText>
+            </MudContainer>
+        </div>
+    </MudCarouselItem>
+</MudCarousel>
+
+
+
