@@ -13109,11 +13109,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\NC_Flights.Server.csproj",
+      "projectUniqueName": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\NC_Flights.Server.csproj",
       "projectName": "NC_Flights.Server",
-      "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\NC_Flights.Server.csproj",
+      "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\NC_Flights.Server.csproj",
       "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\obj\\",
+      "outputPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -13130,11 +13130,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj": {
-              "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj"
+            "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj": {
+              "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj"
             },
-            "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
-              "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj"
+            "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
+              "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj"
             }
           }
         }

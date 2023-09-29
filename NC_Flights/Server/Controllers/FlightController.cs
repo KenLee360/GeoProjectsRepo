@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NC_Flights.Server.Data;
 using NC_Flights.Shared;
 using System.Linq;
+using NC_Flights.Server.Services.AirlinesNCService;
 
 namespace NC_Flights.Server.Controllers
 {
@@ -11,41 +12,34 @@ namespace NC_Flights.Server.Controllers
     [ApiController]
     public class FlightController : ControllerBase
     {
-        private readonly WebAppContext _context;
+        private readonly IAirlinesNCService _airlinesNCservice;
 
-        public FlightController(WebAppContext context)
+        public FlightController(IAirlinesNCService airlinesNCService)
         {
-            _context = context;
+            _airlinesNCservice = airlinesNCService;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<AirlinesNc>>> GetFlights()
         {
-            var flights = await _context.AirlinesNcs
-                .Where(p => p.Id < 40000)
-                .ToListAsync();
-            return flights;
+            return await _airlinesNCservice.GetFlights();
         }
 
         [HttpGet("list")]
         public async Task<ActionResult<List<AirlinesNc>>> GetFlightsList()
         {
-            var flights = await _context.AirlinesNcs
-                .Where(l => l.Id < 40000)
-                .GroupBy(l => l.AirportTo)
-                .Select(l => l.First())
-                .ToListAsync();
-            return flights;
+            return await _airlinesNCservice.GetFlightsList();
         }
 
 
         [HttpGet("{id:int}")]
         public async Task<ActionResult<AirlinesNc>> GetById(int id)
         {
-            var result = await _context.AirlinesNcs.FindAsync(id);
+
+            var result = await _airlinesNCservice.GetById(id);
             if (result == null)
             {
-                return NotFound();
+                return NotFound("Couldn't find Flight by Id");
             }
             return result;
         }
@@ -54,19 +48,18 @@ namespace NC_Flights.Server.Controllers
         [HttpGet("{search}")]
         public async Task<ActionResult<IEnumerable<AirlinesNc>>> GetByAirport(string airport)
         {
-            IQueryable<AirlinesNc> query = _context.AirlinesNcs;
-
-            if (!string.IsNullOrEmpty(airport))
+            var search = await _airlinesNCservice.GetByAirport(airport);
+            if(search.Any())
             {
-                query = query.Where(p => p.AirportFrom.Contains(airport) || p.AirportTo.Contains(airport));
+                return Ok(search);
             }
-            return await query.ToListAsync();
+            return NotFound("Couldn't Find any Airports.");
         }
 
         [HttpPut("{id:int}")]
         public async Task<ActionResult<AirlinesNc>> UpdateFlight(int id, AirlinesNc flight)
         {
-            var record = await _context.AirlinesNcs.FindAsync(id);
+            var record = await _airlinesNCservice.UpdateFlight(id , flight);
             if (record == null)
             {
                 return NotFound("No record was found to update");
@@ -75,17 +68,6 @@ namespace NC_Flights.Server.Controllers
                 return BadRequest("Id mismatch");
             }
 
-            record.Id = flight.Id;
-            record.Airline = flight.Airline;
-            record.Flight = flight.Flight;
-            record.AirportFrom = flight.AirportFrom;
-            record.AirportTo = flight.AirportTo;
-            record.DayOfWeek = flight.DayOfWeek;
-            record.Time = flight.Time;
-            record.Length = flight.Length;
-            record.Delay = flight.Delay;
-
-            await _context.SaveChangesAsync();
             return record;
         }
 

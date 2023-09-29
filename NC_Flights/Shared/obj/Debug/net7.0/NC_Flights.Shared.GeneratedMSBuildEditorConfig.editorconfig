@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = NC_Flights.Shared
-build_property.ProjectDir = C:\Users\kenny\source\repos\NC_Flights\Shared\
+build_property.ProjectDir = C:\Users\kenny\Documents\Git Repos\GeoProjectsRepo\NC_Flights\Shared\

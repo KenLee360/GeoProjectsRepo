@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = NC_Flights.Client
 build_property.RootNamespace = NC_Flights.Client
-build_property.ProjectDir = C:\Users\kenny\source\repos\NC_Flights\Client\
+build_property.ProjectDir = C:\Users\kenny\Documents\Git Repos\GeoProjectsRepo\NC_Flights\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kenny\source\repos\NC_Flights\Client
+build_property.MSBuildProjectDirectory = C:\Users\kenny\Documents\Git Repos\GeoProjectsRepo\NC_Flights\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/App.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Pages/Airports.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Pages/Airports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWlycG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Pages/ByAirport.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Pages/ByAirport.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnlBaXJwb3J0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Pages/Edit.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Pages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Pages/Flights.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Pages/Flights.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmxpZ2h0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Pages/GeoBlazorMap.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Pages/GeoBlazorMap.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VvQmxhem9yTWFwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Pages/Home.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/_Imports.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Shared/MainLayout.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-pyuix8ep9m
 
-[C:/Users/kenny/source/repos/NC_Flights/Client/Shared/NavMenu.razor]
+[C:/Users/kenny/Documents/Git Repos/GeoProjectsRepo/NC_Flights/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-028bej1hnc

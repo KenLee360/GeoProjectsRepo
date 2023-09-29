@@ -523,11 +523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
       "projectName": "NC_Flights.Shared",
-      "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
+      "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
       "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",

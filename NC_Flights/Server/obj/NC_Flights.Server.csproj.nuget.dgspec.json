@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\NC_Flights.Server.csproj": {}
+    "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\NC_Flights.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj": {
+    "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj",
+        "projectUniqueName": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj",
         "projectName": "NC_Flights.Client",
-        "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj",
+        "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj",
         "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\obj\\",
+        "outputPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
-                "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj"
+              "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
+                "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\NC_Flights.Server.csproj": {
+    "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\NC_Flights.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\NC_Flights.Server.csproj",
+        "projectUniqueName": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\NC_Flights.Server.csproj",
         "projectName": "NC_Flights.Server",
-        "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\NC_Flights.Server.csproj",
+        "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\NC_Flights.Server.csproj",
         "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Server\\obj\\",
+        "outputPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,11 +117,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj": {
-                "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Client\\NC_Flights.Client.csproj"
+              "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj": {
+                "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Client\\NC_Flights.Client.csproj"
               },
-              "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
-                "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj"
+              "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
+                "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj"
               }
             }
           }
@@ -178,14 +178,14 @@
         }
       }
     },
-    "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
+    "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
         "projectName": "NC_Flights.Shared",
-        "projectPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
+        "projectPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\NC_Flights.Shared.csproj",
         "packagesPath": "C:\\Users\\kenny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenny\\source\\repos\\NC_Flights\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\NC_Flights\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kenny\\AppData\\Roaming\\NuGet\\NuGet.Config",

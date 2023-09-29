@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using NC_Flights.Server.Data;
+using NC_Flights.Server.Services.AirlinesNCService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IAirlinesNCService, AirlinesNCService>();
 builder.Services.AddDbContext<WebAppContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("Database")
     ));
