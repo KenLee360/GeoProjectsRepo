@@ -7,7 +7,7 @@
                 <FieldsPopupContent>
                     <FieldInfo FieldName="AirportName" Label="Airport Name" />
                     <FieldInfo FieldName="AirportType" Label="Airport Type" />
-                    <FieldInfo FieldName="AirportId" Label="@link"></FieldInfo>
+                    <FieldInfo FieldName="AirportId" Label=@link />
                 </FieldsPopupContent>
             </PopupTemplate>
         </FeatureLayer>
@@ -16,6 +16,6 @@
 </MapView>
 
 @code {
-    public string link { get; set; } = "<a href='https://localhost:7039/airports'>All Airports</a>";
+    public string link { get; set; } = "<a href='https://localhost:7039/airports'>Select this airport</a>";
 
 }

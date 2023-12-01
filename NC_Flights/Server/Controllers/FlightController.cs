@@ -26,7 +26,7 @@ namespace NC_Flights.Server.Controllers
         }
 
         [HttpGet("list")]
-        public async Task<ActionResult<List<AirlinesNc>>> GetFlightsList()
+        public async Task<ActionResult<List<string>>> GetFlightsList()
         {
             return await _airlinesNCservice.GetFlightsList();
         }

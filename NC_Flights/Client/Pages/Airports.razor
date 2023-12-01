@@ -7,58 +7,57 @@
 
 
 <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="background:#BDBDBD">
-    <MudAlert Severity="Severity.Normal">This Page shows All Commerical Airlines. Clicking on an airport code returns all flights at that airport</MudAlert>
+    <MudAlert Severity="Severity.Info" Variant="Variant.Filled">This Page shows All Commerical Airlines. Clicking on an airport code returns all flights at that airport</MudAlert>
     <br />
     <br />
-    <MudTable Items="@FlyData">
-        <ToolBarContent>
-            <MudText Typo="Typo.h6">North Carolina Airports</MudText>
-        </ToolBarContent>
-        <HeaderContent>
-            <MudTh>Current Airports</MudTh>
-        </HeaderContent>
-        <RowTemplate>
-            @if (context.AirportTo == "CLT" || context.AirportTo == "FAY" || context.AirportTo == "AVL" || context.AirportTo == "GSO"
-            || context.AirportTo == "ILM" || context.AirportTo == "JQF" || context.AirportTo == "PGV" || context.AirportTo == "EWN"
-            || context.AirportTo == "OAJ" || context.AirportTo == "RDU")
-            {
-                <MudTd><a href="airports/@context.AirportTo">@context.AirportTo</a></MudTd>
-            }    
-        </RowTemplate>
-    </MudTable>
-    <br />
-    <br />
-    <MudTable Items="@FlyData">
-        <ToolBarContent>
-            <MudText Typo="Typo.h6"> Other Airports</MudText>
-        </ToolBarContent>
-        <HeaderContent>
-            <MudTh>Current Airports</MudTh>
-        </HeaderContent>
-        <RowTemplate>
-            @if (context.AirportTo == "CLT" || context.AirportTo == "FAY" || context.AirportTo == "AVL" || context.AirportTo == "GSO"
-            || context.AirportTo == "ILM" || context.AirportTo == "JQF" || context.AirportTo == "PGV" || context.AirportTo == "EWN"
-            || context.AirportTo == "OAJ" || context.AirportTo == "RDU")
-            {
-            } else
-            {
-                <MudTd><a href="airports/@context.AirportTo">@context.AirportTo</a></MudTd>
-            } 
-        </RowTemplate>
-    </MudTable>
+    <MudExpansionPanels>
+        <MudExpansionPanel Text="North Carolina Airports">
+            <MudTable Items="@AirportsList">
+                <ToolBarContent>
+                    <MudText Typo="Typo.h6">North Carolina Airports</MudText>
+                </ToolBarContent>
+                <RowTemplate>
+                    @if (NCAirports.Contains(context))
+                    {
+                        <MudTd><a href="airports/@context">@context</a></MudTd>
+                    }
+                </RowTemplate>
+            </MudTable>
+        </MudExpansionPanel>
+        <MudExpansionPanel Text="Other Airports">
+            <MudTable Items="@AirportsList">
+                <ToolBarContent>
+                    <MudText Typo="Typo.h6">Other Airports</MudText>
+                </ToolBarContent>
+                <RowTemplate>
+                    @if (NCAirports.Contains(context))
+                    {
+                    }
+                    else
+                    {
+                        <MudTd><a href="airports/@context">@context</a></MudTd>
+                    }
+                </RowTemplate>
+                <PagerContent>
+                    <MudTablePager PageSizeOptions="new int[] { 25, 50, 100, int.MaxValue }" />
+                </PagerContent>
+            </MudTable>
+        </MudExpansionPanel>
+    </MudExpansionPanels>
     <br />
     <br />
 </MudContainer>
 
 @code {
-    public List<AirlinesNc> FlyData { get; set; } = new List<AirlinesNc>();
+    public List<string>? AirportsList;
+    List<string> NCAirports = new List<string> { "CLT" , "FAY", "RDU", "GSO", "AVL", "ILM", "EWN", "PGV" , "OAJ", "JQF" };
 
     protected override async Task OnInitializedAsync()
     {
-        var result = await Http.GetFromJsonAsync<List<AirlinesNc>>("flight/list");
+        var result = await Http.GetFromJsonAsync<List<string>>("flight/list");
         if (result is not null)
         {
-            FlyData = result;
+            AirportsList = result.Distinct().ToList();
         }
     }
 }

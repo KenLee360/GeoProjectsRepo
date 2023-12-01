@@ -29,7 +29,9 @@ else
                 <MudTd>@context.Flight</MudTd>
                 <MudTd>@context.AirportFrom</MudTd>
                 <MudTd>@context.AirportTo</MudTd>
-                <MudTd><a href="edit/@context.Id">View Details</a></MudTd>
+                <MudTd>
+                    <a href="edit/@context.Id">View Details</a>
+                </MudTd>
             </RowTemplate>
             <PagerContent>
                 <MudTablePager PageSizeOptions="new int[] { 25, 50, 100, int.MaxValue }" />
