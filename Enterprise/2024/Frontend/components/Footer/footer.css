@@ -1,0 +1,44 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+}
+
+
+ul.menu--black-footer-menu {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding-left: 0;
+}
+
+    ul.menu--black-footer-menu li {
+        padding-bottom: 1rem;
+    }
+
+        ul.menu--black-footer-menu li a,
+        ul.menu--black-footer-menu li a:active,
+        ul.menu--black-footer-menu li a:focus,
+        ul.menu--black-footer-menu li a:hover,
+        ul.menu--black-footer-menu li a:visited {
+            color: #1b1b1b;
+            text-decoration: none;
+            font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            font-size: 0.94rem;
+            line-height: 1;
+        }
+
+
+@media all and (max-width: 660px) {
+
+    .usa-social-link {
+        display: grid;
+    }
+
+    .usa-footer-logo {
+        content: url("/src/assets/FSDP/assets/fs-images/logo.png");
+        height: 100px
+    }
+}
+
