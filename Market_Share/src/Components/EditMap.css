@@ -1,0 +1,29 @@
+@import 'https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/light/main.css';
+
+.editRef {
+    display: flex;
+    height: 100vh;
+}
+
+.panel {
+    width: 400px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.editform {
+    margin-right: 75px;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.title {
+    margin-left: 65px;
+}
+
+.btn {
+    margin: 10px;
+}

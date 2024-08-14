@@ -4,7 +4,7 @@ import MapView from "@arcgis/core/views/MapView.js";
 import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 import esriConfig from "@arcgis/core/config.js";
 import Home from "@arcgis/core/widgets/Home.js";
-import Query from "@arcgis/core/rest/support/query.js";
+import Query from "@arcgis/core/rest/support/Query.js";
 import Expand from "@arcgis/core/widgets/Expand.js";
 import Legend from "@arcgis/core/widgets/Legend.js";
 import './App.css'
