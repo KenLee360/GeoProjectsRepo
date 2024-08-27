@@ -71,15 +71,11 @@ const FeatureTable = () => {
                 updateFeatures: [feature],
             };
 
-            try {
-                featureLayer.applyEdits(edits).then(() => {
-                    alert('Feature updated successfully!');
-                    window.location.reload()
-                    setEdit(null)
-                });            
-            } catch (error) {
-                console.error("Error saving feature: ", error)
-            }
+            featureLayer.applyEdits(edits).then(() => {
+                alert('Feature updated successfully!');
+                window.location.reload()
+                setEdit(null)
+            }).caatch(err => console.log("Error Saving feature: ", err))
         }     
     };
 

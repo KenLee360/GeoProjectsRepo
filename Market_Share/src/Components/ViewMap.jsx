@@ -47,7 +47,7 @@ const ViewMap = () => {
             view.on('click', (event) => {
                 view.hitTest(event).then((response) => {
                     const result = response.results[0];
-                    if (result && result.graphic) {
+                    if (result.graphic) {
                         const attributes = result.graphic.attributes;
                         setAirName(`${attributes.AirportName}`);
                         setCarrier(`${attributes.MajorCarrier}`);
@@ -91,10 +91,10 @@ const ViewMap = () => {
         <div>
             <div className="viewDiv" ref={viewDiv}></div>
             <div id="divide" style={{ padding: '10px' }}>
-                <h3>{airName ? airName : 'No Airport Selected'}</h3>
-                <img src={getImg(carrier)} width='300' height='200' hidden={airName == ''} />
+                <h3>{airName || 'No Airport Selected'}</h3>
+                <img src={getImg(carrier)} width='300' height='200' hidden={airName == ''} alt="AirlineImage"/>
                 <br />
-                <h4 hidden={airName == '' || airName == null}>{carrier ? carrier : '[SELECT AIRPORT]'} flys {share ? share : 0}% <br /> of the total passengers at <br /> {airName ? airName : '[SELECT AIRPORT]'}.</h4>
+                <h4 hidden={airName == '' || airName == null}>{carrier || '[SELECT AIRPORT]'} flys {share || 0}% <br /> of the total passengers at <br /> {airName || '[SELECT AIRPORT]'}.</h4>
             </div>
         </div>
     )

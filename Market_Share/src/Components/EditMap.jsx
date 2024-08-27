@@ -124,14 +124,11 @@ const EditMap = () => {
             addFeatures: [newfeature]
         }
 
-        try {
-            airports.applyEdits(edits).then(() => {
-                alert("Feature added!");
-                navigate("/")
-            })
-        } catch (error) {
-            console.error("Error adding feature: ", error)
-        }
+        airports.applyEdits(edits).then(() => {
+            alert("Feature added!");
+            navigate("/")
+        }).catch(error => console.log("Error adding feature: ", error))
+        
 
     };
 
@@ -142,15 +139,15 @@ const EditMap = () => {
                 <h2 className="title">Add Airport</h2>
                 <form className="editform">
                     <div className="form-group">
-                        <label>Ariport Code</label>
+                        <label htmlFor="airCode">Ariport Code</label>
                         <input type="text" className="form-control" name="airCode" value={airId} onChange={(e) => setAirId(e.target.value)} />
                     </div>
                     <div className="form-group">
-                        <label>Airport Name</label>
+                        <label htmlFor="airName">Airport Name</label>
                         <input type="text" className="form-control" name="airName" value={airName} onChange={(e) => setAirName(e.target.value)} />
                     </div>
                     <div className="form-group">
-                        <label>Major Airline</label>
+                        <label htmlFor="major">Major Airline</label>
                         <select className="form-control" value={carrier} onChange={(e) => setCarrier(e.target.value)}>
                             <option>Choose...</option>
                             <option value='American Airlines'>American Airlines</option>
@@ -159,17 +156,17 @@ const EditMap = () => {
                         </select>
                     </div>
                     <div className="form-group">
-                        <label>Share Percentage</label>
+                        <label htmlFor="share">Share Percentage</label>
                         <input type="text" className="form-control" name="share" value={share} onChange={(e) => setShare(e.target.value)} />
                     </div>
                     <div className="form-group">
                         <div className="row">
                             <div className="col">
-                                <label>Latitiude</label>
+                                <label htmlFor="latitude">Latitiude</label>
                                 <input type="text" className="form-control" value={lat} onChange={(e) => setLat(e.target.value)} disabled/>
                             </div>
                             <div className="col">
-                                <label>Longitude</label>
+                                <label htmlFor="longitude">Longitude</label>
                                 <input type="text" className="form-control" value={long} onChange={(e) => setLong(e.target.value)} disabled/>
                             </div>
                         </div>
