@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\src\\components\\table.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:src\\components\\table.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\src\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:src\\components\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -15,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:src\\components\\viewmap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\src\\components\\table.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:src\\components\\table.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\src\\components\\viewmap.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:src\\components\\viewmap.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA9DE288-2084-4C32-A79D-D657812AB74E}|market_share.esproj|c:\\users\\kenny\\documents\\git repos\\geoprojectsrepo\\market_share\\src\\components\\editmap.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -90,11 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ViewMap.jsx",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\ViewMap.jsx",
               "RelativeDocumentMoniker": "src\\Components\\ViewMap.jsx",
@@ -108,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ViewMap.css",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\ViewMap.css",
               "RelativeDocumentMoniker": "src\\Components\\ViewMap.css",
@@ -118,19 +118,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-08-08T19:56:03.482Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Table.css",
-              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Table.css",
-              "RelativeDocumentMoniker": "src\\Components\\Table.css",
-              "ToolTip": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Table.css",
-              "RelativeToolTip": "src\\Components\\Table.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-27T15:57:51.556Z",
               "EditorCaption": ""
             },
             {
@@ -196,13 +183,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\package.json",
               "RelativeDocumentMoniker": "package.json",
               "ToolTip": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\package.json",
               "RelativeToolTip": "package.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAADAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-08-08T15:35:13.169Z",
               "EditorCaption": ""
@@ -221,13 +208,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Header.jsx",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Header.jsx",
               "RelativeDocumentMoniker": "src\\Components\\Header.jsx",
               "ToolTip": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Header.jsx",
               "RelativeToolTip": "src\\Components\\Header.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAADwvxkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-08-08T15:46:53.759Z",
               "EditorCaption": ""
@@ -258,15 +245,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Table.jsx",
               "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Table.jsx",
               "RelativeDocumentMoniker": "src\\Components\\Table.jsx",
               "ToolTip": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Table.jsx",
               "RelativeToolTip": "src\\Components\\Table.jsx",
-              "ViewState": "AQIAADkAAAAAAAAAAAASwE0AAABIAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAASwGwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-08-12T14:47:23.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Table.css",
+              "DocumentMoniker": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Table.css",
+              "RelativeDocumentMoniker": "src\\Components\\Table.css",
+              "ToolTip": "C:\\Users\\kenny\\Documents\\Git Repos\\GeoProjectsRepo\\Market_Share\\src\\Components\\Table.css",
+              "RelativeToolTip": "src\\Components\\Table.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-27T15:57:51.556Z",
               "EditorCaption": ""
             },
             {

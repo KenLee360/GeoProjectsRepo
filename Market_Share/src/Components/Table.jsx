@@ -106,7 +106,7 @@ const FeatureTable = () => {
     };
     
     return (
-        <div className="container mt-4">
+        <div className="container-fluid mt-4">
             <h3 className="text-center">Edit Features</h3>
             <table className="table table-striped mt-3">
                 <thead className="thead-dark">
